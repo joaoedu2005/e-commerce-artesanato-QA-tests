@@ -17,15 +17,15 @@ O projeto possui dois tipos de Usuários: Clientes e Administradores. A platafor
 Nesta seção, apresento a execução dos testes de ponta a ponta (E2E) no "Caminho Crítico". Para garantir a estabilidade, utilizei seletores resilientes e esperas dinâmicas para lidar com elementos assíncronos da interface.
 
 ### 💳 Fluxo de Checkout Completo
-![Demonstração do Checkout](./evidence/cypress/videos/Checkout.cy.ts.mp4)
+![Demonstração do Checkout](./evidence/cypress/videos/Checkout.gif)
 *Descrição: O teste automatiza desde o login do usuário, seleção de produto, adição ao carrinho até o redirecionamento para o gateway de pagamento.*
 
 ### 🔐 Cadastro e Autenticação
-![Demonstração de Auth](./evidence/cypress/videos/Auth.cy.ts.mp4)
+![Demonstração de Auth](./evidence/cypress/videos/Auth.gif)
 *Descrição: Validação de fluxos de sucesso para criação de conta e acesso ao painel administrativo.*
 
 ### 🔐 Criação de Produto
-![Demonstração de Auth](./evidence/cypress/videos/CreateProduct.cy.ts.mp4)
+![Demonstração de Criação de Produto](./evidence/cypress/videos/CreateProduct.gif)
 *Descrição: Validação da criação de um produto preenchendo inúmeros campos (tem que estar logado com uma conta de nível Admin).*
 
 

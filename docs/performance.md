@@ -10,6 +10,7 @@ thresholds: {
     http_req_duration: ['p(95)<2000'], // 95% das requisições devem responder em até 2s
     http_req_failed: ['rate<0.01']     // No máximo 1% das requisições podem falhar
 }
+```
 
 📊 Resultados da Execução
 Os dados abaixo foram extraídos do relatório gerado após o estresse dos endpoints de backend.
