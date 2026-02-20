@@ -1,0 +1,23 @@
+describe.only('Login Admin Test', () => {
+  it('Success login', () => {
+    cy.visit('https://centroartesanato.netlify.app/')
+    cy.get('[href="/conta/login"]').click()
+    cy.get('#email').type("joaoadmin@artesanato.com")
+    cy.get('#senha').type("admin123")
+    cy.get(':nth-child(4) > .w-full').click()
+    cy.get(':nth-child(2) > :nth-child(1) > .justify-between').click()
+    cy.get(':nth-child(1) > .block').click()
+    cy.get('.justify-between > .bg-amber-600').click()
+    cy.get('#nome').type("Produto Teste")
+    cy.get('#artesao').select('João Victor Gomes dos Santos')
+    cy.get('#descricao').type("Produto muito maneiro testando Cypress")
+    cy.get('#preco').type("5")
+    cy.get('#estoque').type("2")
+    cy.get('#categoria').select("Decoração")
+    cy.get('#tecnica').type("Crochê")
+    cy.get('.flex > .input-field').type("Algodão")
+    cy.get('.p-4 > :nth-child(4) > .input-field').type("https://cdn.prod.website-files.com/62d9b9c78f111f03f778e150/66c5bca185acc1124d919ae7_cypress_logo_social.png")
+    cy.get('.btn-primary').click()
+  })  
+})
+
