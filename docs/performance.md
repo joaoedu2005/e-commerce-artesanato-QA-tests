@@ -10,7 +10,6 @@ thresholds: {
     http_req_duration: ['p(95)<2000'], // 95% das requisições devem responder em até 2s
     http_req_failed: ['rate<0.01']     // No máximo 1% das requisições podem falhar
 }
-```
 
 📊 Resultados da Execução
 Os dados abaixo foram extraídos do relatório gerado após o estresse dos endpoints de backend.
@@ -21,7 +20,7 @@ Requisições Falhas	    0 (0%)	                ✅ Passed
 Tempo Médio (AVG)	    2948.99 ms	            ⚠️ Acima do esperado
 Percentil 90 (p90)	    6696.43 ms	            ❌ Breached
 Percentil 95 (p95)	    6738.07 ms	            ❌ Breached
-
+```
 
 🛡️ Recomendações de Melhoria
 Para alinhar a performance aos objetivos de negócio, as seguintes ações foram propostas:
